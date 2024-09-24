@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 # Load data
-file = r'C:\Users\amuthumanikandan\OneDrive - athenahealth\Audit\SQL Doc\Grow data skills\Class 15 Python\Class_Project\CLASS6\Diwali Sales Data.csv'
-df = pd.read_csv(file, encoding='unicode_escape')
+url ='Diwali_Sales_Data.csv'
+df = pd.read_csv(url, encoding='unicode_escape')
 
 # Drop unwanted columns
 df.drop(['Status', 'Unnamed'], axis=1, inplace=True)
